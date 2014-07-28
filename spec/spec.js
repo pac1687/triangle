@@ -10,4 +10,8 @@ describe("triangle", function() {
   it("should output the word 'Isosceles' when given only two equal sides", function() {
   	triangle(3, 4, 3).should.equal("Isosceles")
   });
+
+  it("should output the word 'Scalene' when no sides are equal", function() {
+  	triangle(3, 5, 4).should.equal("Scalene")
+  });
 });
